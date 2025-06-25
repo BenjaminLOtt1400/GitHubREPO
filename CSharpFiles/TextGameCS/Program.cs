@@ -5,47 +5,51 @@ class Program
     static void Main(string[] args)
     {
         Console.WriteLine("You are standing in a clearing. To the north is a " +
-        "trail leading up a mountain; to the south is a vast lake.");
-        string response = Input("Go to the mountain or the lake?", "M", "L");
+        "trail leading into a dense forest; to the south is a blazing desert.");
+        string response = Input("Go to the forest or the desert?", "F", "D");
 
-        if (response == "m")
+        if (response == "f")
         {
-            Console.WriteLine("You head for the mountains.");
+            Console.WriteLine("You head into the overgrown forest.");
 
-            Console.WriteLine("Up ahead is a cave. Around the cave is a tall hill.");
+            Console.WriteLine("Up ahead is a grotto. On the side of the trail there is a tree house.");
 
-            response = Input("Should you explore the cave or summit the hill?", "C", "H");
+            response = Input("Should you explore the grotto or climb the tree house?", "G", "T");
 
-            if (response == 'c')
+            if (response == "g")
             {
-                Console.WriteLine("You enter the dark, dank cave...");
-                Console.WriteLine("You encounter a bear!");
+                Console.WriteLine("You enter the grotto and find a small pond.");
+                Console.WriteLine("You find a family of koi fish swimming in the pond");
             }
             else
             {
-                Console.WriteLine("After much exertion, you reach the top...");
-                Console.WriteLine("You encounter a snake!");
+                Console.WriteLine("After climbing the ladder you enter the tree house.");
+                Console.WriteLine("You find a group of young boys dressed as pirates.");
+                Console.WriteLine("The kids suddenly charge you with their wooden swords!");
             }
 
 
         }
         else
         {
-            Console.WriteLine("You go to the lake.");
+            Console.WriteLine("You tread into the hot desert.");
 
-            Console.WriteLine("There is a dock with a boat tied up. The boat is not yours");
-            response = Input("Should you take the boat or swim across?", "B", "S");
+            Console.WriteLine("You come across a small pyramid like structure, there is a sign" +
+            "warning you not to enter it");
+            response = Input("Should you enter the pyramid or walk away from it", "P", "W");
 
-            if (response == "b")
+            if (response == "p")
             {
-                Console.WriteLine("You steal the boat!");
-                Console.WriteLine("Half way across the lake, you are capsized by " +
-                "the Loch Ness Monster!");
+                Console.WriteLine("You bravely enter the pyramid.");
+                Console.WriteLine("You see a casket and you open it " +
+                "and fine a mummy inside");
+                Console.WriteLine("The Mummy suddenly grabs you by the neck!");
             }
             else
             {
-                Console.WriteLine("You swim.");
-                Console.WriteLine("... and are attacked by a ferocious trout!");
+                Console.WriteLine("You walk past the pyramid.");
+                Console.WriteLine("It is so hot and you didn't bring a water bottle.");
+                Console.WriteLine("You eventually collapse from heat stroke!");
             }
         }
 
