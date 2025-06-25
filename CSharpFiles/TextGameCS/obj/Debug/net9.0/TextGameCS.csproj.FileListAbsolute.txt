@@ -1,0 +1,5 @@
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.AssemblyInfoInputs.cache
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.AssemblyInfo.cs
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.csproj.CoreCompileInputs.cache
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.sourcelink.json

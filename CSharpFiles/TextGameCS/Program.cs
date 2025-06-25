@@ -4,6 +4,8 @@ class Program
 {
     static void Main(string[] args)
     {
+        Console.WriteLine("You are standing in a clearing. To the north is a" +
+        "trail leading up a mountain; to the south is a vast lake.");
         Input("Go to the mountain or the lake?", "M", "L");
     }
 
@@ -14,7 +16,7 @@ class Program
         do
         {
             Console.Write(message + " (" + o1 + "/" + o2 + ")");
-            string response = Console.ReadLine().ToLower();
+            response = Console.ReadLine().ToLower();
 
             if (response == o1.ToLower())
             {

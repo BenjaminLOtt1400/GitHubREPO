@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\18016\\Desktop\\PythonFiles\\GeneralRepoBOTT\\TextGameCS\\TextGameCS.csproj": {}
+    "C:\\Users\\18016\\Desktop\\GitHubREPO\\CSharpFiles\\TextGameCS\\TextGameCS.csproj": {}
   },
   "projects": {
-    "C:\\Users\\18016\\Desktop\\PythonFiles\\GeneralRepoBOTT\\TextGameCS\\TextGameCS.csproj": {
+    "C:\\Users\\18016\\Desktop\\GitHubREPO\\CSharpFiles\\TextGameCS\\TextGameCS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\18016\\Desktop\\PythonFiles\\GeneralRepoBOTT\\TextGameCS\\TextGameCS.csproj",
+        "projectUniqueName": "C:\\Users\\18016\\Desktop\\GitHubREPO\\CSharpFiles\\TextGameCS\\TextGameCS.csproj",
         "projectName": "TextGameCS",
-        "projectPath": "C:\\Users\\18016\\Desktop\\PythonFiles\\GeneralRepoBOTT\\TextGameCS\\TextGameCS.csproj",
+        "projectPath": "C:\\Users\\18016\\Desktop\\GitHubREPO\\CSharpFiles\\TextGameCS\\TextGameCS.csproj",
         "packagesPath": "C:\\Users\\18016\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\18016\\Desktop\\PythonFiles\\GeneralRepoBOTT\\TextGameCS\\obj\\",
+        "outputPath": "C:\\Users\\18016\\Desktop\\GitHubREPO\\CSharpFiles\\TextGameCS\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\18016\\AppData\\Roaming\\NuGet\\NuGet.Config"
