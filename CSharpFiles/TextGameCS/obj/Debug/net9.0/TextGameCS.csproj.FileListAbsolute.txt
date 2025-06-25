@@ -3,3 +3,13 @@ C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGa
 C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.AssemblyInfo.cs
 C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.csproj.CoreCompileInputs.cache
 C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.sourcelink.json
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\bin\Debug\net9.0\TextGameCS.exe
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\bin\Debug\net9.0\TextGameCS.deps.json
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\bin\Debug\net9.0\TextGameCS.runtimeconfig.json
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\bin\Debug\net9.0\TextGameCS.dll
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\bin\Debug\net9.0\TextGameCS.pdb
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.dll
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\refint\TextGameCS.dll
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.pdb
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\TextGameCS.genruntimeconfig.cache
+C:\Users\18016\Desktop\GitHubREPO\CSharpFiles\TextGameCS\obj\Debug\net9.0\ref\TextGameCS.dll
