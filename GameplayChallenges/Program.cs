@@ -34,11 +34,66 @@ class Challenges
         // Commonly used challenges
         // Physical Coordination Challengesw
         // Speed and reaction time
+        // QuickDraw(1000);
+
         // Accuracy and precision
+        // DartThrow(250);
+
         // Understanding physics (the physics of the game world)
+
+
         // Timing and Rhythm
+        // RhythmChamp();
+
         // Combos
-        QuickDraw(1000);
+
+        // Logical/Mathematical Challenges
+        // Formal Logic Puzzles: should be able to be solved without outside knowledge
+        // CodeBreaker(4, 10); // Length of code, number of tries
+        // Math-related problems
+
+        // Races and Time Pressure
+        // race: to complete before someone else
+        // time pressure: to complete for a time
+        // TypeRacer("All the world is a stage...", 5000);
+
+        // Factual Knowledge Challenges
+        // int score = TriviaQuiz();
+
+        // Memory challenges (i.e. in game memory)
+        // ShellGame(5, 1000);
+
+        // Pattern recognition challenges
+
+
+        // Exploration Challenges
+        //      Spatial awareness challenges (map)
+        //      Locked doors (impeding obstacle that can be removed)
+        //      Mazes (Typically all areas the same/similar)
+        //      Illogical Spaces
+        //      Teleporters (transports player from one area to another)
+        //      Finding hidden objects
+
+        // MazeExplorer();
+
+        // Economic Challenges
+        //      Accumulate resources: money, points, ect.
+        //      Caring for Living Things
+        // FarmSim(5);
+
+        // Conceptual Reasoning: combine reasoning power with what you know about the puzzle
+        // Lateral Thinking: think "outside the box" to solve the puzzle
+
+        // Conflict: direct opposition of forces
+        //      Strategy: planning, resources, reasoning, ect.
+        //      Tactics: making a plan and executing it
+        //      Logistics: managing resources
+        //      Survival and Reduction of Enemy Forces
+        //      Defending vulnerable items or units
+        //      Stealth: the ability to move undetected
+        BattleSim("Jimbo", 50, 50);
+
+
 
 
     }
@@ -60,69 +115,104 @@ class Challenges
         return response;
     }
 
-
     static bool BattleSim(string enemy, int enemyHealth, int playerHealth)
     {
-        // TODO: Complete method stub
+        UpdateStats(enemy, enemyHealth, playerHealth);
+
+        do
+        {
+            AttackBy("Player", ref enemyHealth);
+            UpdateStats(enemy, enemyHealth, playerHealth);
+
+            if (enemyHealth > 0)
+            {
+                AttackBy(enemy, ref playerHealth);
+                UpdateStats(enemy, enemyHealth, playerHealth);
+            }
+        } while (playerHealth > 0 && enemyHealth > 0);
+        if (playerHealth > 0)
+        {
+            Console.WriteLine($"\n{enemy} falls to the ground defeated.");
+            return true;
+        }
+
+        Console.WriteLine("\nYou stumble to the ground in defeat.");
         return false;
     }
-    // Required for BattleSim
+
     static void UpdateStats(string enemy, int enemyHealth, int playerHealth)
     {
-        // TODO: Complete method stub
+        Console.Clear();
+        Console.WriteLine($"Player: {playerHealth}");
+        Console.WriteLine($"{enemy}: {enemyHealth}");
     }
 
-    // Required for BattleSim
     static void AttackBy(string attackerName, ref int receiverHealth)
     {
-        // TODO: Complete method stub
+        Console.Write($"\n{attackerName} prepares to attack..." +
+            "(press ENTER)");
+        Console.ReadLine();
+
+        int damage = new Random().Next(10);
+        Console.WriteLine($"... and strikes for {damage} damage! " +
+            "(press ENTER)");
+        Console.ReadLine();
+
+        receiverHealth -= damage;
+        receiverHealth = receiverHealth < 0 ? 0 : receiverHealth;
     }
 
-static bool CodeBreaker(int n, int attempts) {
-int remain = attempts;
-string code = "";
-string symbols = "ABCDEF";
-List<string> boardData = [];
-Random random = new();
-for (int i = 0; i < n; i++)
-code += symbols[random.Next(symbols.Length)];
-Console.WriteLine($"Crack the {n}-digit code with " +
-$"any combination of {symbols}.");
-while (remain > 0) {
-string guess;
-do {
-Console.Write($"\nAttempt {attempts - remain + 1}: ");
-guess = (Console.ReadLine() ?? "").ToUpper();
-} while (guess.Length != n);
-int perfectMatchCount = 0;
-for (int i = 0; i < code.Length; i++)
-if (code[i] == guess[i])
-perfectMatchCount++;
-int symbolMatchCount = 0;
-string temp = code;
-for (int i = 0; i < guess.Length; i++) {
-if (temp.Contains(guess[i])) {
-symbolMatchCount++;
-temp = temp.Remove(temp.IndexOf(guess[i]), 1);
-}
+static bool CodeBreaker(int n, int attempts)
+    {
+        int remain = attempts;
+        string code = "";
+        string symbols = "ABCDEF";
+        List<string> boardData = [];
+        Random random = new();
+        for (int i = 0; i < n; i++)
+            code += symbols[random.Next(symbols.Length)];
+        Console.WriteLine($"Crack the {n}-digit code with " +
+        $"any combination of {symbols}.");
+        while (remain > 0)
+        {
+            string guess;
+            do
+            {
+                Console.Write($"\nAttempt {attempts - remain + 1}: ");
+                guess = (Console.ReadLine() ?? "").ToUpper();
+            } while (guess.Length != n);
+            int perfectMatchCount = 0;
+            for (int i = 0; i < code.Length; i++)
+                if (code[i] == guess[i])
+                    perfectMatchCount++;
+            int symbolMatchCount = 0;
+            string temp = code;
+            for (int i = 0; i < guess.Length; i++)
+            {
+                if (temp.Contains(guess[i]))
+                {
+                    symbolMatchCount++;
+                    temp = temp.Remove(temp.IndexOf(guess[i]), 1);
+                }
 
-}
-boardData.Add(guess +
-$" ({perfectMatchCount})({symbolMatchCount})");
-Console.Clear();
-Console.WriteLine("Code ($)(#)\n");
-foreach (string play in boardData)
-Console.WriteLine(play);
-Console.WriteLine("\n$ = Perfect Match\n# = Symbol Match");
-if (perfectMatchCount == n) {
-Console.WriteLine($"\nSUCCESS! Original code: {code}");
-return true;
-}
-remain--;
-}
-Console.WriteLine($"\nFAIL! The code was: {code}");
-return false;
-}
+            }
+            boardData.Add(guess +
+            $" ({perfectMatchCount})({symbolMatchCount})");
+            Console.Clear();
+            Console.WriteLine("Code ($)(#)\n");
+            foreach (string play in boardData)
+                Console.WriteLine(play);
+            Console.WriteLine("\n$ = Perfect Match\n# = Symbol Match");
+            if (perfectMatchCount == n)
+            {
+                Console.WriteLine($"\nSUCCESS! Original code: {code}");
+                return true;
+            }
+            remain--;
+        }
+        Console.WriteLine($"\nFAIL! The code was: {code}");
+        return false;
+    }
 static int DartThrow(int speed) {
 int markerPosition = 0;
 bool movingRight = true;
