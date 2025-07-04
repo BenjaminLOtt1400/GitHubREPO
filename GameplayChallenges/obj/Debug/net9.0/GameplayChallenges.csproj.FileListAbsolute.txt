@@ -1,0 +1,15 @@
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\bin\Debug\net9.0\GameplayChallenges.exe
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\bin\Debug\net9.0\GameplayChallenges.deps.json
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\bin\Debug\net9.0\GameplayChallenges.runtimeconfig.json
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\bin\Debug\net9.0\GameplayChallenges.dll
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\bin\Debug\net9.0\GameplayChallenges.pdb
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\obj\Debug\net9.0\GameplayChallenges.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\obj\Debug\net9.0\GameplayChallenges.AssemblyInfoInputs.cache
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\obj\Debug\net9.0\GameplayChallenges.AssemblyInfo.cs
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\obj\Debug\net9.0\GameplayChallenges.csproj.CoreCompileInputs.cache
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\obj\Debug\net9.0\GameplayChallenges.sourcelink.json
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\obj\Debug\net9.0\GameplayChallenges.dll
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\obj\Debug\net9.0\refint\GameplayChallenges.dll
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\obj\Debug\net9.0\GameplayChallenges.pdb
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\obj\Debug\net9.0\GameplayChallenges.genruntimeconfig.cache
+C:\Users\18016\Desktop\GitHubREPO\GameplayChallenges\obj\Debug\net9.0\ref\GameplayChallenges.dll
