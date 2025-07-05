@@ -30,14 +30,15 @@ class Challenges
 {
     static void Main(string[] args)
     {
-
+        int score = 0;
         // Commonly used challenges
         // Physical Coordination Challengesw
         // Speed and reaction time
         // QuickDraw(1000);
 
         // Accuracy and precision
-        // DartThrow(250);
+        score = DartThrow(25);
+        Console.WriteLine(score);
 
         // Understanding physics (the physics of the game world)
 
@@ -91,7 +92,7 @@ class Challenges
         //      Survival and Reduction of Enemy Forces
         //      Defending vulnerable items or units
         //      Stealth: the ability to move undetected
-        BattleSim("Jimbo", 50, 50);
+        // BattleSim("Jimbo", 50, 50);
 
 
 
