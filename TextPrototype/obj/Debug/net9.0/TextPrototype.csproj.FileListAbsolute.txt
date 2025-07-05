@@ -1,0 +1,15 @@
+C:\Users\18016\Desktop\GitHubREPO\textprototype\obj\Debug\net9.0\TextPrototype.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\18016\Desktop\GitHubREPO\textprototype\obj\Debug\net9.0\TextPrototype.AssemblyInfoInputs.cache
+C:\Users\18016\Desktop\GitHubREPO\textprototype\obj\Debug\net9.0\TextPrototype.AssemblyInfo.cs
+C:\Users\18016\Desktop\GitHubREPO\textprototype\obj\Debug\net9.0\TextPrototype.csproj.CoreCompileInputs.cache
+C:\Users\18016\Desktop\GitHubREPO\textprototype\obj\Debug\net9.0\TextPrototype.sourcelink.json
+C:\Users\18016\Desktop\GitHubREPO\textprototype\bin\Debug\net9.0\TextPrototype.exe
+C:\Users\18016\Desktop\GitHubREPO\textprototype\bin\Debug\net9.0\TextPrototype.deps.json
+C:\Users\18016\Desktop\GitHubREPO\textprototype\bin\Debug\net9.0\TextPrototype.runtimeconfig.json
+C:\Users\18016\Desktop\GitHubREPO\textprototype\bin\Debug\net9.0\TextPrototype.dll
+C:\Users\18016\Desktop\GitHubREPO\textprototype\bin\Debug\net9.0\TextPrototype.pdb
+C:\Users\18016\Desktop\GitHubREPO\textprototype\obj\Debug\net9.0\TextPrototype.dll
+C:\Users\18016\Desktop\GitHubREPO\textprototype\obj\Debug\net9.0\refint\TextPrototype.dll
+C:\Users\18016\Desktop\GitHubREPO\textprototype\obj\Debug\net9.0\TextPrototype.pdb
+C:\Users\18016\Desktop\GitHubREPO\textprototype\obj\Debug\net9.0\TextPrototype.genruntimeconfig.cache
+C:\Users\18016\Desktop\GitHubREPO\textprototype\obj\Debug\net9.0\ref\TextPrototype.dll
