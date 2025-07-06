@@ -11,7 +11,8 @@ class Program
         int swordTaken = 0; // Value to be incremented upon collection of the sword
         int gauntletTaken = 0; // Value to be incremented upon collection of the gauntlet
         int payRespect = 0; // Value to be incremented upon paying respect at grave
-        int difficulty = 0;
+        int difficulty = 0; // Value to be used on determining speed of dart game
+        int witnessOldMan = 0; // Value to be incremented upon first speaking with the old man
         string response = "PlaceHolder"; // Placeholder value for decision inputs
 
         Console.WriteLine("Welcome to the text prototype of The Trecherous Cave!");
@@ -52,7 +53,7 @@ class Program
                 Console.ReadLine();
                 Console.WriteLine("Cave Man: What can you tell me about this place?");
                 Console.ReadLine();
-                Console.WriteLine("Old Man: There are things in here you cannot imagine" +
+                Console.WriteLine("Old Man: There are things in here you cannot imagine. " +
                 "Don't go forward, the king will not be pleased.");
                 Console.ReadLine();
                 Console.WriteLine("Cave Man: Who is the king?");
@@ -63,6 +64,7 @@ class Program
                 Console.ReadLine();
                 Console.WriteLine("You head back the way you came towards the crystal cave.");
                 Console.ReadLine();
+                witnessOldMan += 1;
             }
             else
             {
@@ -87,7 +89,7 @@ class Program
         Console.WriteLine("The hole on the left you see a redish glow of what might be a fire.");
         Console.ReadLine();
         Console.WriteLine("The hole on the right has a green glow.");
-        response = Input("Do you go into the left hole or the right", "l", "r");
+        response = Input("Do you go into the left hole or the right", "L", "R");
         if (response == "r")
         {
             Console.WriteLine("You climb the ladder on the right towards the green lights.");
@@ -182,31 +184,33 @@ class Program
                     Console.ReadLine();
                     highExplosives += 1;
                 }
-                Console.WriteLine("You proceed to look around the golden grove when you hear a strange noise.");
-                Console.ReadLine();
-                Console.WriteLine("After looking behind a golden rock you see that insane old man from earlier!");
-                Console.ReadLine();
-                Console.WriteLine("Cave Man: How are you here, this cave is a single path and you never passed me.");
-                Console.ReadLine();
-                Console.WriteLine("Old Man: What are you talking about I have been here the whole time.");
-                Console.ReadLine();
-                Console.WriteLine("Cave Man: Whatever, tell me more about this cave before you lose your marbles again.");
-                Console.ReadLine();
-                Console.WriteLine("Old Man: The King's protector is ahead, he is the one that created the Bone Yard.");
-                Console.ReadLine();
-                Console.WriteLine("Cave Man: How can I get past him, I need to leave this place!");
-                Console.ReadLine();
-                Console.WriteLine("Old Man: His skin is as tough as steel.");
-                Console.ReadLine();
-                Console.WriteLine("Old Man: The bones speak to me and say they are watching your progress.");
-                Console.ReadLine();
-                Console.WriteLine("Cave Man: What does that even mean, how can I get past the guardian?");
-                Console.ReadLine();
-                Console.ReadLine();
-                Console.WriteLine("The old man becomes unresponsive again.");
-                Console.ReadLine();
-                Console.WriteLine("Cave Man: What on earth has this dude seen to lose it this bad.");
-                Console.ReadLine();
+                if (witnessOldMan == 1)
+                {
+                    Console.WriteLine("You proceed to look around the golden grove when you hear a strange noise.");
+                    Console.ReadLine();
+                    Console.WriteLine("After looking behind a golden rock you see that insane old man from earlier!");
+                    Console.ReadLine();
+                    Console.WriteLine("Cave Man: How are you here, this cave is a single path and you never passed me.");
+                    Console.ReadLine();
+                    Console.WriteLine("Old Man: What are you talking about I have been here the whole time.");
+                    Console.ReadLine();
+                    Console.WriteLine("Cave Man: Whatever, tell me more about this cave before you lose your marbles again.");
+                    Console.ReadLine();
+                    Console.WriteLine("Old Man: The King's protector is ahead, he is the one that created the Bone Yard.");
+                    Console.ReadLine();
+                    Console.WriteLine("Cave Man: How can I get past him, I need to leave this place!");
+                    Console.ReadLine();
+                    Console.WriteLine("Old Man: His skin is as tough as steel.");
+                    Console.ReadLine();
+                    Console.WriteLine("Old Man: The bones speak to me and say they are watching your progress.");
+                    Console.ReadLine();
+                    Console.WriteLine("Cave Man: What does that even mean, how can I get past the guardian?");
+                    Console.ReadLine();
+                    Console.WriteLine("The old man becomes unresponsive again.");
+                    Console.ReadLine();
+                    Console.WriteLine("Cave Man: What on earth has this dude seen to lose it this bad.");
+                    Console.ReadLine();
+                }
                 Console.WriteLine("You head back towards the cliff.");
                 Console.ReadLine();
                 Console.WriteLine("You brace yourself as you jump back down the cliff into the Bone Yard.");
@@ -246,12 +250,12 @@ class Program
         Console.WriteLine("Press SPACE when over the X icon.");
         Console.WriteLine("Press ENTER to begin");
         Console.ReadLine();
+        difficulty = 150;
         for (int i = 0; i < 5; i++)
         {
-            difficulty = 200;
             score = DartThrow(difficulty);
             scoreTotal += score;
-            difficulty -= 45;
+            difficulty -= 25;
         }
         if (scoreTotal <= 150)
         {
@@ -341,15 +345,23 @@ class Program
         Console.ReadLine();
         Console.WriteLine("The rat jumps off from his throne looking at you with disgust.");
         Console.ReadLine();
-        Console.WriteLine("Cave Man: So you are the king that lunatic was blabbering about, let me leave.");
-        Console.ReadLine();
+        if (witnessOldMan == 1)
+        {
+            Console.WriteLine("Cave Man: So you are the king that lunatic was blabbering about, let me leave.");
+            Console.ReadLine();
+        }
+        else
+        {
+            Console.WriteLine("Cave Man: So you aare the king that your guardian was speaking of.");
+            Console.ReadLine();
+        }
         Console.WriteLine("Rat King: No one is allowed to leave after learning about my existance.");
         Console.ReadLine();
         Console.WriteLine("Cave Man: Well tough luck because im going to get past you and get out of here.");
         Console.ReadLine();
-        Console.WriteLine("My sanctuary must remain unknown, no one else shall expose my domain");
+        Console.WriteLine("Rat King: My sanctuary must remain unknown, no one else shall expose my domain");
         Console.ReadLine();
-        Console.WriteLine("Well lets just see how much you can enjoy your santuary once you are gone.");
+        Console.WriteLine("Cave Man: Well lets just see how much you can enjoy your santuary once you are gone.");
         Console.ReadLine();
         Console.WriteLine("The Rat King lets out a piercing screech that echoes throughout the entire cave system.");
         Console.ReadLine();
@@ -359,7 +371,7 @@ class Program
         Console.ReadLine();
         Console.WriteLine("You must score over 300 in 7 attempts");
         scoreTotal = 0;
-        difficulty = 250;
+        difficulty = 150;
         int multiplier = 1;
         int ExtraAttempts = 0;
         if (gauntletTaken == 1)
@@ -385,7 +397,7 @@ class Program
         {
             score = DartThrow(difficulty);
             scoreTotal += score * multiplier;
-            difficulty -= 45;
+            difficulty -= 15;
         }
         if (scoreTotal <= 300)
         {
@@ -511,5 +523,3 @@ class Program
         return 25;
 }
 }
-
-
